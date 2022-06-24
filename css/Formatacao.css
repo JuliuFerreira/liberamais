@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family:'Roboto';
 }
-.body{
+body{
     background-color: rgb(136, 136, 136);
 }
 .container{
