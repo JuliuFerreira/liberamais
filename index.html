@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="css/Formatacao.css">
     <title>Libera Mais</title>
 </head>
-<body class="body">
-    <div class="container"> 
+<body> 
+    <div class="container"> <!--div CONTAINER REFERE-SE A div PRINCIPAL DE NOSSA PAGINA-->
         <div>
             <img class="banner" src="BANNERLIBERA1novo.jpg" alt="banner">
         </div>    
-        <div class="whatsapp">
+        <div class="whatsapp"> <!--CLASS INSERE UMA FORMATAÇÃO JÁ SALVA NO DOCUMENTO .CSS-->
             <a href="https://api.whatsapp.com/send?phone=5548996690361" target="_blank"><img src="whatsapp.png" alt="whatsapp"></a>            
         </div>
         <div class="informacoes">           
             <div class="noticias">
-                <img src="noticias.png" alt="">
-                <br>
+                <img src="noticias.png" alt=""> <!--iNSERE UMA IMAGEM SALVA NO PRÓPRIO COMPUTADOR-->
+                <br> <!--PULA UMA LINHA-->
                 <br>
                 BC sobe juros a 13,25% ao ano, maior nível desde janeiro de 2017... 
                 <br>
@@ -28,13 +28,13 @@
                 Com isso, o índice foi de 12,75% para 13,25% ao ano — o maior patamar desde o reajuste estabelecido de dezembro de 2016 até 11 de janeiro de 2017, quando a taxa estava em 13,75%...
                 <br>
                 <br>
-                Para saber mais <a href="https://economia.uol.com.br/noticias/redacao/2022/06/15/copom-selic-juros-junho-2022.htm" target="_blank">Clique Aqui</a>
+                Para saber mais <a href="https://economia.uol.com.br/noticias/redacao/2022/06/15/copom-selic-juros-junho-2022.htm" target="_blank">Clique Aqui</a> <!-- a htef INSERE UM LINK DE UMA PAGINA EXTERNA, tagert "_blank" FAZ O LINK ABRIR EM UMA NOVA ABA -->
                 <br>
                 <br>
                 <img style="width: 300px; margin-left: 23%;" ; src="aumentotaxa.png" alt="">
             </div>   
             <div class="consignado">                
-                <p style="font-size:22px; font-family: roboto; margin-top: 15px; margin-bottom: -15px;"> <strong> O que é empréstimo consignado?</strong></p>
+                <p style="font-size:22px; font-family: roboto; margin-top: 15px; margin-bottom: -15px;"> <strong> O que é empréstimo consignado?</strong></p> <!--strong DEIXA O TEXTO EM NEGRITO-->
                 <br>
                 <br>
                 Empréstimo consignado é o crédito realizado atravéz de pagamento indireto, cujo as parcelas são descontadas
@@ -99,29 +99,30 @@
             </div>        
         </div>
         <br>
-        <br>        
-        <br>        
-        <div class="formulario">            
+        <br>
+        <br>
+        <br>
+        <div class="formulario">        
             <div class="formatacao-formulario">
                 <div style="margin-left: 30px; font-family:roboto; font-size: 20px; text-align: left;">
                     <strong> Solicite uma simulação:</strong>
                 </div>
                 <br>
-                <form action="/formulario-contato" method="post" >
+                <form action="/formulario-contato" method="post" > <!--form Formulário HTML através do método POST / Action DEFINE A URL NA QUAL SERÁ ENVIADA OS DADOS DO FORMULÁRIO / method "post" ENVIA OS DADOS AO SERVIDOR-->
                     <div class="formatacao-campo">
-                        <label for="nome">Nome:</label>
+                        <label for="nome">Nome:</label> <!--label DEFINE O NOME DO CAMPO-->
                         <br>
-                        <input class="text-box" type="text" id="nome" name="nome_usuario">
+                        <input class="text-box" type="text" id="nome" name="nome_usuario"> <!--imput CAMPO DE ENTRADA DE DADOS-->
                     </div>
                     <div class="formatacao-campo">
                         <label for="nome">CPF:</label>
                         <br>
-                        <input class="text-box" type="number" id="cpf" name="cpf_usuario">
+                        <input class="text-box" type="text" id="cpf" name="cpf_usuario"> <!--type TIPO DE ENTRADA DO CAMPO-->
                     </div>
                     <div class="formatacao-campo">
                         <label for="nome">Telefone:</label>
                         <br>
-                        <input class="text-box" type="number" id="fone" name="fone_usuario">
+                        <input class="text-box" type="tel" id="fone" name="fone_usuario">
                     </div>
                     <div class="formatacao-campo">
                         <label for="email">E-mail:</label>
@@ -131,13 +132,13 @@
                     <div class="formatacao-campo">
                         <label for="texto">Texto:</label>
                         <br>
-                        <textarea class="text-area" id="texto" name="texto_usuario"></textarea>
+                        <textarea class="text-area" id="texto" name="texto_usuario"></textarea> <!--textarea É A AREA PARA ESCREVER O TEXTO-->
                             <div>
-                                <button class="button" type="submit"><img src="enviar.png" alt=""></button>
-                                <button class="button" type="reset"><img src="apagar.png" alt=""></button> 
-                            </div> 
-                            
+                                <button class="button" type="submit"><img src="enviar.png" alt=""></button> <!--button INSERE UM BOTÃO / type "submite" PARA ENVIAR OS DADOS-->
+                                <button class="button" type="reset"><img src="apagar.png" alt=""></button> <!--type "reset" PARA APAGAR O FORMULÁRIO-->
+                            </div>                             
                     </div>
+                    <br>
                     <br>                                                      
                 </form>
             </div>
