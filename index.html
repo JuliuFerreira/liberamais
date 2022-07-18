@@ -7,6 +7,7 @@
     <link rel="icon" href="liberamais.png">
     <link rel="stylesheet" href="css/Formatacao.css">
     <title>Libera Mais</title>
+    <script src="js/validacao.js"></script>
 </head>
 <body> 
     <div class="container"> <!--div CONTAINER REFERE-SE A div PRINCIPAL DE NOSSA PAGINA-->
@@ -108,7 +109,7 @@
                     <strong> Solicite uma simulação:</strong>
                 </div>
                 <br>
-                <form action="/formulario-contato" method="post" > <!--form Formulário HTML através do método POST / Action DEFINE A URL NA QUAL SERÁ ENVIADA OS DADOS DO FORMULÁRIO / method "post" ENVIA OS DADOS AO SERVIDOR-->
+                <form action="/formulario-contato" method="post" name="contato" onsubmit="enviarForm();" > <!--form Formulário HTML através do método POST / Action DEFINE A URL NA QUAL SERÁ ENVIADA OS DADOS DO FORMULÁRIO / method "post" ENVIA OS DADOS AO SERVIDOR-->
                     <div class="formatacao-campo">
                         <label for="nome">Nome:</label> <!--label DEFINE O NOME DO CAMPO-->
                         <br>
@@ -117,12 +118,12 @@
                     <div class="formatacao-campo">
                         <label for="nome">CPF:</label>
                         <br>
-                        <input class="text-box" type="text" id="cpf" name="cpf_usuario"> <!--type TIPO DE ENTRADA DO CAMPO-->
+                        <input class="text-box" type="text" minlength="11" maxlength="11" onkeypress="return onlynumber()" id="cpf" name="cpf_usuario"> <!--type TIPO DE ENTRADA DO CAMPO-->
                     </div>
                     <div class="formatacao-campo">
                         <label for="nome">Telefone:</label>
                         <br>
-                        <input class="text-box" type="tel" id="fone" name="fone_usuario">
+                        <input class="text-box" type="tel" minlength="11" maxlength="11" onkeypress="return onlynumber()" id="fone" name="fone_usuario"> <!--onkeypress aceita somente os numero ou caracter digitado-->
                     </div>
                     <div class="formatacao-campo">
                         <label for="email">E-mail:</label>
@@ -133,14 +134,14 @@
                         <label for="texto">Texto:</label>
                         <br>
                         <textarea class="text-area" id="texto" name="texto_usuario"></textarea> <!--textarea É A AREA PARA ESCREVER O TEXTO-->
-                            <div>
-                                <button class="button" type="submit"><img src="enviar.png" alt=""></button> <!--button INSERE UM BOTÃO / type "submite" PARA ENVIAR OS DADOS-->
-                                <button class="button" type="reset"><img src="apagar.png" alt=""></button> <!--type "reset" PARA APAGAR O FORMULÁRIO-->
-                            </div>                             
-                    </div>
-                    <br>
-                    <br>                                                      
-                </form>
+                    <div>
+                        <button class="button" type="submit"><img src="enviar.png" alt=""></button> <!--button INSERE UM BOTÃO / type "submite" PARA ENVIAR OS DADOS-->
+                        <button class="button" type="reset"><img src="apagar.png" alt=""></button> <!--type "reset" PARA APAGAR O FORMULÁRIO-->
+                    </div>                             
+            </div>
+            <br>
+            <br>                                                      
+         </form>
             </div>
             <div class="mapa">
                 <div class="ondeestamos">
@@ -167,7 +168,9 @@
                     <img class="rsociais" src="Instagram_icon.png" alt="instagram"></a>
                 <a  href="https://www.facebook.com/Liberamais" target="_blank">
                     <img class="rsociais" src="faceicon.png" alt="facebook"></a> 
-            </div>         
+            </div>  
+         
+            
         </div>
     </div> 
     <br>
