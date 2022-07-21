@@ -19,31 +19,47 @@
         </div>
         <div class="informacoes">           
             <div class="noticias">
-                <img src="noticias.png" alt=""> <!--iNSERE UMA IMAGEM SALVA NO PRÓPRIO COMPUTADOR-->
+                <img src="noticias.png" alt="noticias"> <!--iNSERE UMA IMAGEM SALVA NO PRÓPRIO COMPUTADOR-->
                 <br> <!--PULA UMA LINHA-->
                 <br>
-                BC sobe juros a 13,25% ao ano, maior nível desde janeiro de 2017... 
-                <br>
-                <br>
-                O Copom (Comitê de Política Monetária) do BC (Banco Central) decidiu hoje, por unanimidade, subir a taxa básica de juros da economia (Selic) em 0,5 ponto percentual. 
-                Com isso, o índice foi de 12,75% para 13,25% ao ano — o maior patamar desde o reajuste estabelecido de dezembro de 2016 até 11 de janeiro de 2017, quando a taxa estava em 13,75%...
-                <br>
-                <br>
-                Para saber mais <a href="https://economia.uol.com.br/noticias/redacao/2022/06/15/copom-selic-juros-junho-2022.htm" target="_blank">Clique Aqui</a> <!-- a htef INSERE UM LINK DE UMA PAGINA EXTERNA, tagert "_blank" FAZ O LINK ABRIR EM UMA NOVA ABA -->
-                <br>
-                <br>
-                <img style="width: 300px; margin-left: 23%;" ; src="aumentotaxa.png" alt="">
+                <div class="card" style="width: 35rem;"> <!--ELEMENTO ADICIONADO DO BOOTSTRAP-->
+                    <img src="bancocentral.jpg" class="card-img-top" alt="Taxa de juros do banco central">
+                    <br>
+                    <br>
+                    <div class="card-body">
+                      <h5 class="card-title">BC sobe juros a 13,25% ao ano, maior nível desde janeiro de 2017... </h5>
+                      <br>
+                      <p class="card-text">Copom (Comitê de Política Monetária) do BC (Banco Central) decidiu, por unanimidade, subir a taxa básica de juros da economia (Selic) em 0,5 ponto percentual. </p>
+                      <a href="https://economia.uol.com.br/noticias/redacao/2022/06/15/copom-selic-juros-junho-2022.htm" target="_blank" class="btn btn-primary">Clique aqui para saber mais</a>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="card" style="width: 35rem;"> <!--ELEMENTO ADICIONADO DO BOOTSTRAP-->
+                    <img src="margemnova.jpeg" class="card-img-top" alt="Nova margem do consignado">
+                    <br>
+                    <br>
+                    <div class="card-body">
+                      <h5 class="card-title">Senado aprova MP que amplia margem de empréstimo consignado</h5>
+                      <br>
+                      <br>
+                      <p class="card-text">Modalidade é concedida a quem tem salário, aposentadoria ou pensão creditados em conta-corrente; texto vai para sanção de Bolsonaro.</p>
+                      <a href="https://noticias.r7.com/brasilia/senado-aprova-mp-que-amplia-margem-de-emprestimo-consignado-07072022" target="_blank" class="btn btn-primary">Clique aqui para saber mais</a>
+                    </div>
+                  </div>
             </div>   
             <div class="consignado">                
-                <p style="font-size:22px; font-family: roboto; margin-top: 15px; margin-bottom: -15px;"> <strong> O que é empréstimo consignado?</strong></p> <!--strong DEIXA O TEXTO EM NEGRITO-->
+                <p style="font-size:22px; font-family: roboto; margin-top: 15px; margin-bottom: -15px; text-align: center; padding: 10px;"> <strong> O que é empréstimo consignado?</strong></p> <!--strong DEIXA O TEXTO EM NEGRITO-->
                 <br>
                 <br>
-                Empréstimo consignado é o crédito realizado atravéz de pagamento indireto, cujo as parcelas são descontadas
+                <p style="text-align:left; padding: 10px;"> Empréstimo consignado é o crédito realizado atravéz de pagamento indireto, cujo as parcelas são descontadas
                 diretamente na folha de pagamento. Os juros e encargos desta modalidade de crédito podem ser consultados
                 no site da previdência social, sendo que para aposentados ou pensinistas do INSS por exemplo, 
                 as taxas maximas são de 2,14% a.m para o emrpestimo e de 3,06% a.m para o cartão consignado.
                 Atualmente a margem máxima que o aposentado ou pensionista pode comprometer de sua renda com esse tipo 
-                de empréstimo é de 35% + 5% que são destinados exclusivamente para o cartão consignado.
+                de empréstimo é de 35% + 5% que são destinados exclusivamente para o cartão consignado.</p>
+                <br>
+                <img src="dindin.jpg" alt="">
             </div>         
         </div>
         <br>
@@ -100,6 +116,8 @@
             </div>        
         </div>
         <br>
+        
+
         <br>
         <br>
         <br>
@@ -118,7 +136,7 @@
                     <div class="formatacao-campo">
                         <label for="nome">CPF:</label>
                         <br>
-                        <input class="text-box" type="text" minlength="11" maxlength="11" onkeypress="return onlynumber()" id="cpf" name="cpf_usuario"> <!--type TIPO DE ENTRADA DO CAMPO-->
+                        <input class="text-box" type="text" minlength="11" maxlength="11"  onkeypress="return onlynumber()" id="cpf" name="cpf_usuario"> <!--type TIPO DE ENTRADA DO CAMPO-->
                     </div>
                     <div class="formatacao-campo">
                         <label for="nome">Telefone:</label>
@@ -168,9 +186,7 @@
                     <img class="rsociais" src="Instagram_icon.png" alt="instagram"></a>
                 <a  href="https://www.facebook.com/Liberamais" target="_blank">
                     <img class="rsociais" src="faceicon.png" alt="facebook"></a> 
-            </div>  
-         
-            
+            </div>                      
         </div>
     </div> 
     <br>
